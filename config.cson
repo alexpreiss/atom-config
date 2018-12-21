@@ -1,0 +1,38 @@
+"*":
+  "atom-ide-ui":
+    hyperclick:
+      darwinTriggerKeys: "shiftKey,metaKey"
+    use:
+      "atom-ide-diagnostics-ui": "never"
+  core:
+    disabledPackages: [
+      "emmet"
+      "kite"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "one-dark-syntax"
+    ]
+  editor: {}
+  elmjutsu:
+    autocompleteMaxSuggestions: 30
+    cacheDirectory: "/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/elmjutsu90776gO8AY93ACa2n"
+    runElmMake: "never"
+  "exception-reporting":
+    userId: "1283bfb7-5b3c-4426-ba7d-3b0fa205d862"
+  kite:
+    editorMetricsEnabled: "no"
+    showEditorVacanciesNotificationOnStartup: false
+    showWelcomeNotificationOnStartup: false
+  "language-elm":
+    autocompleteEnabled: false
+  "linter-elm-make": {}
+  "linter-ui-default":
+    panelHeight: 317
+  minimap: {}
+  welcome:
+    showOnStartup: false
+".elm.source":
+  editor:
+    tabLength: 4

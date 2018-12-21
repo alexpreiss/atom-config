@@ -1,0 +1,184 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/d-1181119-602-97a7o7.j3pm1pds4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/d-1181119-602-97a7o7.j3pm1pds4i/package.tgz",
+        "spec": "/private/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/d-1181119-602-97a7o7.j3pm1pds4i/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/apm-install-dir-1181119-602-1wb18y2.ct1niv0a4i"
+    ]
+  ],
+  "_from": "../d-1181119-602-97a7o7.j3pm1pds4i/package.tgz",
+  "_id": "kite@0.131.0",
+  "_inCache": true,
+  "_location": "/kite",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/d-1181119-602-97a7o7.j3pm1pds4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/d-1181119-602-97a7o7.j3pm1pds4i/package.tgz",
+    "spec": "/private/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/d-1181119-602-97a7o7.j3pm1pds4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1181119-602-97a7o7.j3pm1pds4i/package.tgz",
+  "_shasum": "27ce903841dc4a3a83684e78c8c9e7c843e29dc3",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/d-1181119-602-97a7o7.j3pm1pds4i/package.tgz",
+  "_where": "/private/var/folders/f5/c687ptfs0436_2cfsgnhbwmw0000gp/T/apm-install-dir-1181119-602-1wb18y2.ct1niv0a4i",
+  "bugs": {
+    "url": "https://github.com/kiteco/atom-plugin/issues"
+  },
+  "configSchema": {
+    "editorMetricsEnabled": {
+      "type": "string",
+      "enum": [
+        "not specified",
+        "yes",
+        "no"
+      ],
+      "default": "not specified",
+      "title": "Editor metrics enabled",
+      "description": "Kite can periodically send information to our servers about the status of the Kite application to ensure that is is running correctly"
+    },
+    "showWelcomeNotificationOnStartup": {
+      "type": "boolean",
+      "default": true,
+      "title": "Show welcome features on startup",
+      "description": "Whether to display the Kite welcome features on startup"
+    },
+    "showEditorVacanciesNotificationOnStartup": {
+      "type": "boolean",
+      "default": true,
+      "title": "Notify me when Kite supports other editors",
+      "description": "Kite can notify me on startup if it is available for other editors on my system"
+    },
+    "enableCompletions": {
+      "type": "boolean",
+      "default": true,
+      "title": "Enable completions",
+      "description": "Show auto-completions from Kite as Atom suggestions"
+    },
+    "enableHoverUI": {
+      "type": "boolean",
+      "default": true,
+      "title": "Enable hover info",
+      "description": "Show hover information when placing the mouse over a programming expression"
+    },
+    "maxVisibleSuggestionsAlongSignature": {
+      "type": "integer",
+      "default": 3,
+      "title": "Max visible suggestions along signature"
+    },
+    "hideDocumentationWhenSignatureIsAvailable": {
+      "type": "boolean",
+      "default": true,
+      "title": "Hide documentation when signature is available",
+      "description": "Display only signature if both the signature and documentation are available at the same time"
+    },
+    "loggingLevel": {
+      "type": "string",
+      "default": "info",
+      "enum": [
+        "silly",
+        "verbose",
+        "debug",
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Logging level",
+      "description": "The verbosity level of Kite logs"
+    },
+    "pollingInterval": {
+      "type": "integer",
+      "default": 15000,
+      "min": 1000,
+      "max": 60000,
+      "title": "Polling interval"
+    },
+    "developerMode": {
+      "type": "boolean",
+      "default": false,
+      "title": "Developer mode",
+      "description": "Enable Kite developer mode, displaying received data in the various UIs"
+    },
+    "startKiteAtStartup": {
+      "type": "boolean",
+      "default": true,
+      "description": "Automatically start Kite process on startup if it's not already running."
+    }
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "analytics-node": "^3.1.1",
+    "element-resize-detector": "^1.1.11",
+    "fuzzaldrin-plus": "^0.4.1",
+    "getmac": "1.2.1",
+    "kite-api": "^2.2.0",
+    "kite-connector": "^2.0.3",
+    "kite-installer": "^3.0.1",
+    "md5": "^2.2.0",
+    "rollbar": "^2.3.8",
+    "tiny-relative-date": "^1.3.0",
+    "underscore-plus": "^1"
+  },
+  "description": "Python programming copilot — Kite shows cloud-powered completions, documentation, and examples.",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "editors-json-tests": "git://github.com/kiteco/editors-json-tests.git#master",
+    "eslint": "^3.11.1",
+    "eslint-config": "^0.3.0",
+    "eslint-config-fbjs": "^1.1.1",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-flowtype": "^2.29.1",
+    "eslint-plugin-jasmine": "^2.2.0",
+    "eslint-plugin-prefer-object-spread": "^1.1.0",
+    "eslint-plugin-react": "^5.2.2",
+    "fbjs": "^0.8.6",
+    "javascript-obfuscator": "^0.8.3",
+    "sinon": "^2.3.5"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/kiteco/atom-plugin#readme",
+  "keywords": [],
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "./lib/kite",
+  "name": "kite",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "completions"
+      }
+    }
+  },
+  "readme": "## Atom Kite Plugin Documentation\n\n### Supported Atom versions\n\nAll Atom versions greater than or equal to `v1.13.0` are supported.\n\n### Supported operating systems\n\nAll OS's supported by Kite are also supported by the Atom plugin, currently it supports:\n- OSX (10.10 and higher)\n- Windows (7 and higher)\n\n### Supported languages\n\nThe plugin's features are only available in file types supported by the Kite engine:\n\n- Python: All files with a `.py` extension are supported.\n\n### Install\n\nYou can install the Atom plugin from Kite directly. You can also install the plugin by searching for \"Kite\" in the package manager or by running `apm install kite` in your terminal.\n\n### Startup\n\nWhen starting Atom with Kite plugin for the first time, a brief tour about Kite will be displayed in the active pane.\n\n![kite tour](https://github.com/kiteco/atom-plugin/blob/master/docs/images/kite-tour.png?raw=true)\n\nThis tour will only be displayed once. If you want to see it again on next startup you can activate the `Show Kite Tour On Startup` setting.\n\n### Status bar\n\nThe Kite icon in the status bar displays the state of Kite for the current file. Clicking on the icon will open the status panel with additional information.\n\nThe icon in the status bar can take three different colors:\n\n- blue: The Kite Engine is available and functioning properly.<br/>![kite tour](https://github.com/kiteco/atom-plugin/blob/master/docs/images/kite-status-ready.png?raw=true)\n- gray: There's either no open file or, if there's an active file, the file is either not supported or not whitelisted.<br/>![kite tour](https://github.com/kiteco/atom-plugin/blob/master/docs/images/kite-status-not-whitelisted.png?raw=true)\n- red: Something went wrong when the plugin tried to contact the Kite service on your computer. Depending on the issue, the status panel can offer actions to solve the problem.<br/>![kite tour](https://github.com/kiteco/atom-plugin/blob/master/docs/images/kite-status-not-running.png?raw=true)\n\n### Editor features\n\n#### Hover info\n\nWhen you move the mouse over an expression, Kite can display a popup with a quick summary of what this expression represents, and links to additional documentation.\n\n![kite hover](https://github.com/kiteco/atom-plugin/blob/master/docs/images/kite-hover.png?raw=true)\n\nYou can see up to three links in the popup:\n\n- `def` will open the file where this symbol is defined (this may not be available if Kite cannot find the definition)\n- `docs` will open the Kite copilot with additional documentation for this symbol\n\n#### Completions\n\nKite exposes an `autocomplete-plus` provider. When in a supported file, you'll be able to see Kite's suggestions as well as some additional documentation and links in the `autocomplete-plus` panel.\n\n![kite completions](https://github.com/kiteco/atom-plugin/blob/master/docs/images/kite-completions.png?raw=true)\n\nThe links at the bottom have the same behaviour of those in the [hover UI](#hover-documentation).\n\n#### Function signatures\n\nWhen typing inside a function's parentheses, Kite will display the function signature with info about the current argument and links to additional documentation.\n\n![kite signatures](https://github.com/kiteco/atom-plugin/blob/master/docs/images/kite-signature.png?raw=true)\n\nThe links at the bottom have the same behavior of those in the [hover popup](#hover-info).\n\nKite exposes many commands so that you can setup your own keybindings for them.\n\n|Command|Description|\n|---|---|\n|`kite:docs-at-cursor`|When the cursor is inside an expression, this command will open the copilot with relevant docs.|\n|`kite:open-copilot`|Open the Kite copilot.|\n|`kite:permissions`|Opens Kite permissions into the copilot.|\n|`kite:general-settings`|Opens Kite settings into the copilot.|\n|`kite:editor-plugin-settings`|Opens the Kite plugin settings in Atom.|\n|`kite:help-docs`|Open Kite help docs in your browser.|\n|`kite:status`|Open the Kite status panel.|\n|`kite:tutorial`|Open the Kite interactive onboarding tutorial.|\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiteco/atom-plugin.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "version": "0.131.0"
+}

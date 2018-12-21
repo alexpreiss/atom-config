@@ -1,0 +1,126 @@
+.settings-view {
+  .settings-panel label,
+  .breadcrumb,
+  .setting-title,
+  .package-readme {
+    font-size: inherit;
+  }
+  .section-container {
+    max-width: 60rem;
+  }
+  .config-menu {
+    background: @level-1-bg; // isotope-light-ui: lighter backgrounds
+    .nav > li > a:hover {
+      background: transparent;
+    }
+
+     // isotope-light-ui: easier to read config navigation menu
+    .nav > li {
+      a {
+        color: @base-fg;
+      }
+      &.active {
+        a {
+          color: @fg-selected;
+          background-color: @level-2-bg;
+          font-weight: bolder;
+        }
+      }
+    }
+    .nav > li > a:hover {
+      font-weight: bolder;
+    }
+  }
+  .form-control {
+    height: @component-line-height * @scale-a;
+    padding: 0;
+    line-height: @component-line-height * @scale-a;
+    border-radius: @component-border-radius;
+    max-width: 40rem;
+  }
+  atom-text-editor.mini {
+    background: @level-2-bg;
+  }
+
+  .link {
+    &,
+    &:hover {
+      color: @fg-highlight;
+    }
+  }
+
+  .section:first-of-type {
+    border-top: none;
+  }
+
+  section .section-heading,
+  .section .section-heading {
+    font-size: @scale-a-xl * 1rem;
+
+    &.icon:before {
+      font-size: 24px;
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+
+  .package-card {
+    font-size: inherit;
+    background: @level-1-bg; // isotope-light-ui: lighter backgrounds
+    &:hover {
+      background: @level-2-bg; // isotope-light-ui: lighter backgrounds
+    }
+
+    .card-name {
+      a {
+        color: @fg-highlight;
+      }
+    }
+    .package-name,
+    .package-description {
+      line-height: @scale-a-l * 1rem;
+    }
+    .meta-user .avatar {
+      height: @component-line-height;
+      width: @component-line-height;
+    }
+     // isotope-light-ui: easier to see install button
+    .meta-controls .install-button {
+      color: #fff;
+    }
+    .meta-controls .install-button.is-installing {
+      background-image: linear-gradient(to right, @level-2-bg 50%, @level-1-bg 50%);
+      color: @stroke;
+      border-color: @level-2-bg;
+    }
+    .meta-controls .status-indicator{
+      max-height: @component-line-height;
+    }
+  }
+
+
+  //alerts like "checking for updates"
+  .alert-mixin (@bg, @fg) {
+    color: @fg;
+    border-color: @bg;
+    background-color: transparent;
+  }
+  .alert         { .alert-mixin( @base-fg, @base-fg ); }
+  .alert-success { .alert-mixin( @bg-success, @fg-success ); }
+  .alert-info    { .alert-mixin( @bg-info, @fg-info ); }
+  .alert-warning { .alert-mixin( @bg-warning, @fg-warning ); }
+  .alert-danger  { .alert-mixin( @bg-error, @fg-error ); }
+
+  .checkbox {
+    font-size: 1rem;
+    padding-left: 2rem;
+
+    input[type="checkbox"] {
+      margin-left: -2rem;
+      &:checked {
+        background: @fg-success;
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+'atom-workspace':
+  'cmd-shift-l': 'elm-format:file'
+  'cmd-alt-l': 'elm-format:jump-to-syntax-error'
